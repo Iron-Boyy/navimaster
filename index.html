@@ -3,10 +3,10 @@
 <head>
   <meta charset="utf-8">
   <meta name="description"
-        content="Deformable Neural Radiance Fields creates free-viewpoint portraits (nerfies) from casually captured videos.">
-  <meta name="keywords" content="Nerfies, D-NeRF, NeRF">
+        content="Learning a Unified Policy for GUI and Embodied Navigation Tasks.">
+  <meta name="keywords" content="GUI Agent, Navigation, MLLM">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Nerfies: Deformable Neural Radiance Fields</title>
+  <title>NaviMaster: Learning a Unified Policy for GUI and Embodied Navigation Tasks</title>
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
@@ -39,6 +39,19 @@
   <script src="./static/js/bulma-carousel.min.js"></script>
   <script src="./static/js/bulma-slider.min.js"></script>
   <script src="./static/js/index.js"></script>
+  <style>
+    .video-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr); /* 每行 4 个 */
+      gap: 1rem;
+    }
+
+    .video-item video {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+  </style>
 </head>
 <body>
 
@@ -120,6 +133,72 @@
     </div>
   </div>
 </div>
+</section>
+
+<section class="hero is-light is-small">
+  <h2 class="title is-4 has-text-centered">Spatial Affordance Prediction</h2>
+  <div class="hero-body">
+    <div class="container">
+      <div class="video-grid">
+        <div class="video-item">
+          <video src="./static/videos/spatial_refer_1.mov" autoplay controls muted loop playsinline></video>
+        </div>
+        <div class="video-item">
+          <video src="./static/videos/spatial_refer_2.mov" autoplay controls muted loop playsinline></video>
+        </div>
+        <div class="video-item">
+          <video src="./static/videos/spatial_refer_3.mov" autoplay controls muted loop playsinline></video>
+        </div>
+        <div class="video-item">
+          <video src="./static/videos/spatial_refer_4.mov" autoplay controls muted loop playsinline></video>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="hero is-light is-small">
+  <h2 class="title is-4 has-text-centered">Embodied Navigation</h2>
+  <div class="hero-body">
+    <div class="container">
+      <div class="video-grid">
+        <div class="video-item">
+          <video src="./static/videos/navi_1.mov" autoplay controls muted loop playsinline></video>
+        </div>
+        <div class="video-item">
+          <video src="./static/videos/navi_2.mov" autoplay controls muted loop playsinline></video>
+        </div>
+        <div class="video-item">
+          <video src="./static/videos/navi_3.mov" autoplay controls muted loop playsinline></video>
+        </div>
+        <div class="video-item">
+          <video src="./static/videos/navi_4.mov" autoplay controls muted loop playsinline></video>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="hero is-light is-small">
+  <h2 class="title is-4 has-text-centered">GUI Navigation</h2>
+  <div class="hero-body">
+    <div class="container">
+      <div class="video-grid">
+        <div class="video-item">
+          <video src="./static/videos/demo_bluetooth.mp4" autoplay controls muted loop playsinline></video>
+        </div>
+        <div class="video-item">
+          <video src="./static/videos/demo_contact.mp4" autoplay controls muted loop playsinline></video>
+        </div>
+        <div class="video-item">
+          <video src="./static/videos/demo_expense.mp4" autoplay controls muted loop playsinline></video>
+        </div>
+        <div class="video-item">
+          <video src="./static/videos/demo_send.mp4" autoplay controls muted loop playsinline></video>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
 
 <section class="hero teaser">
